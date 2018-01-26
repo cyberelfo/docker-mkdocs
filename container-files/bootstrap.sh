@@ -2,6 +2,7 @@
 set -eu
 #### "Magic starts Here" - H. Potter #####
 check_install_status () {
+    cd /mkdocs
     if [[ ! -e "mkdocs.yml" ]]; then
     echo "No previous config. Starting fresh instalation"
     mkdocs new .
